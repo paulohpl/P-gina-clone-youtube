@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(font/Roboto_Condensed-Light.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f1f0f0; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/* cabeçalho */
+
+header {
+    width: 100%;
+    height: 56px;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.left-menu {
+    width: 146px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-menu #logo-yt {
+    width: 90px;
+    height: 20px;  
+}
+.left-menu #menu {
+    width: 24px;
+    height: 24px;
+}
+.center-menu {
+    width: 440px;
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-menu input {
+    width: 348px;
+    height: 40px;
+    flex-grow: 1;
+}
+.center-menu input:hover {
+    border: #00bfff 1px solid;
+}
+.center-menu button {
+    width: 57px;
+    height: 40px;
+}
+.right-menu {
+    width: 130px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+}
+.avatar img  {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 40px; 
+}
+
+/* conteúdo principal */
+
+main {
+    width: 1100px;
+    height: 746px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+main #imagem-video {
+    width: 100%;
+    height: 537px;
+}
+p {
+    font-family: 'roboto';   
+}
+main .main-mid-bar {
+    width: 97%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+    align-items: center;
+}
+main .main-mid-bar .chanel-log {
+    width: 160px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;   
+}
+main .main-mid-bar .chanel-log .titulo-canal {
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+main .main-mid-bar .chanel-log .num-inscritos {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.gostei,.naogostei,.share,.download {
+    display: flex;
+    justify-content: space-between;
+}
+.gostei {
+    width: 63px;
+    height: 24px;
+}
+.naogostei {
+    width: 100px;
+    height: 24px;
+}
+.share {
+    width: 115px;
+    height: 24px;
+}
+.download {
+    width: 95px;
+    height: 24px;
+}
+body main .titulo-video {
+    width: 100%;
+    height: 23px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+main .main-mid-bar button {
+    width: 159px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #FF0000;
+    color: white;
+}
+main .main-mid-bar button:hover {
+    background-color: #8B0000;
+}
+main .description {
+    width: 510px;
+    height: 64px;  
+}
+main .description p, .sidebar-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+main p, .titulo-sidebar {
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/* sidebar */
+
+aside {
+    width: 400px;
+    height: 900px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.description-1, .description-2, .description-3,.description-4, .description-5, .description-6, .description-7, .description-8, .description-9 {
+    width: 196px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
